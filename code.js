@@ -32,6 +32,7 @@ const dipendenti=
         nome:"Barbara Ramos",
         posizione:"Graphic Designer",
         foto:"barbara-ramos-graphic-designer.jpg",
-    }
+    },
+    
 
 ]
