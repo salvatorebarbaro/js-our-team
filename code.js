@@ -82,32 +82,33 @@ for( let i=0 ; i<dipendenti.length; i++)
         }
     }
 
-    // Assegna l'elemento corretto in base all'indice (blocco di azioni da eseguire in base all' indice)
-    switch (i + 1) {
-        // esegue il primo caso
-        case 1:
-            dipendente1 = ul;
-            // fine
-            break;
-        case 2:
-            dipendente2 = ul;
-            break;
-        case 3:
-            dipendente3 = ul;
-            break;
-        case 4:
-            dipendente4 = ul;
-            break;
-        case 5:
-            dipendente5 = ul;
-            break;
-        case 6:
-            dipendente6 = ul;
-            break;
-        default:
-            break;
+    if(i+1=== 1)
+    {
+        dipendente1=ul;
+    }
+    else if(i+1=== 2)
+    {
+        dipendente2=ul;
+    }
+    else if(i+1=== 3)
+    {
+        dipendente3=ul;
+    }
+    else if(i+1=== 4)
+    {
+        dipendente4=ul;
+    }
+    else if(i+1=== 5)
+    {
+        dipendente5=ul;
+    }
+    else if(i+1=== 6)
+    {
+        dipendente6=ul;
+    }
 
-}
+
+    
 
 
 }
