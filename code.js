@@ -67,6 +67,19 @@ for( let i=0 ; i<dipendenti.length; i++)
         li.innerText=`${key} : ${dipendente[key]},`;
         // appendo l'elemento li ad ul
         ul.append(li);
+
+        // se la key fosse stata la stringa di caratteri foto fa quei comandi
+        if(key==="foto")
+        {
+            // reiamo l'elemento immagine
+            const img =document.createElement("img");
+            // diamo il percorso per associare il contenitore all'immagine
+            img.src=`./img/dipendente${i + 1}.jpg`;
+            // svuotiamo il contenitore
+            li.innerText="";
+            // appendiamo
+            li.append(img);
+        }
     }
 
     // Assegna l'elemento corretto in base all'indice (blocco di azioni da eseguire in base all' indice)
