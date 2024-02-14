@@ -1,3 +1,11 @@
+let dipendente1;
+let dipendente2;
+let dipendente3;
+let dipendente4;
+let dipendente5;
+let dipendente6;
+
+
 // dichiarazione variabile
 const dipendenti=
 [
@@ -42,18 +50,80 @@ const dipendenti=
 
 ]
 
-// console.log(dipendenti)
-for(let i=0 ; i<dipendenti.length ; i++)
+for( let i=0 ; i<dipendenti.length; i++)
 {
-    // facendo questo ci salviamo i valori che leggiamo con il primo ciclo
-    const dipendente = dipendenti[i];
+    // salvo dati del dipendente
+    const dipendente= dipendenti[i];
 
-    // Quindi, in questo ciclo, key sarà "nome", "posizione" e "foto" per ogni oggetto dipendente nell'array.
-    // da ricordarsi proprieta ( chiave / valore)
+    // crea lista non ordinata per i dettagli dipendenti
+    const ul= document.createElement("ul");
+
+
     for(let key in dipendente)
     {
-       console.log(`${key} : ${dipendente[key]},`) 
-    //    in breve, stai utilizzando key per accedere dinamicamente alle proprietà di ciascun oggetto dipendente nell'array dipendenti durante la tua iterazione.
+        // crea le li
+        const li = document.createElement("li");
+        // scrivo all' interno del list items i valori dei dipendenti
+        li.innerText=`${key} : ${dipendente[key]},`;
+        // appendo l'elemento li ad ul
+        ul.append(li);
     }
-    
+
+    // Assegna l'elemento corretto in base all'indice (blocco di azioni da eseguire in base all' indice)
+    switch (i + 1) {
+        // esegue il primo caso
+        case 1:
+            dipendente1 = ul;
+            // fine
+            break;
+        case 2:
+            dipendente2 = ul;
+            break;
+        case 3:
+            dipendente3 = ul;
+            break;
+        case 4:
+            dipendente4 = ul;
+            break;
+        case 5:
+            dipendente5 = ul;
+            break;
+        case 6:
+            dipendente6 = ul;
+            break;
+        default:
+            break;
+
 }
+
+
+}
+// dichiarazione della card dove andranno le informazioni
+const dipendente1location=document.getElementById("dipendente 1");
+// abbiamo appeso la nostra ul
+dipendente1location.append(dipendente1);
+
+// dichiarazione della card dove andranno le informazioni
+const dipendente2location=document.getElementById("dipendente 2");
+// abbiamo appeso la nostra ul
+dipendente2location.append(dipendente2);
+
+// dichiarazione della card dove andranno le informazioni
+const dipendente3location=document.getElementById("dipendente 3");
+// abbiamo appeso la nostra ul
+dipendente3location.append(dipendente3);
+
+// dichiarazione della card dove andranno le informazioni
+const dipendente4location=document.getElementById("dipendente 4");
+// abbiamo appeso la nostra ul
+dipendente4location.append(dipendente4);
+
+// dichiarazione della card dove andranno le informazioni
+const dipendente5location=document.getElementById("dipendente 5");
+// abbiamo appeso la nostra ul
+dipendente5location.append(dipendente5);
+
+// dichiarazione della card dove andranno le informazioni
+const dipendente6location=document.getElementById("dipendente 6");
+// abbiamo appeso la nostra ul
+dipendente6location.append(dipendente6);
